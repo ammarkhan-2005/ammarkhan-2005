@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Portfolio</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+            scroll-behavior: smooth;
+        }
+
+        /* Navigation-bar */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            display: flex;
+            width: 100%;
+            margin: auto;
+            padding: 20px 105px;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #b32e2e;
+            color: white;
+            z-index: 1;
+        }
+
+        nav ul li {
+            display: inline-block;
+            list-style: none;
+            margin: 10px 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            color: rgb(173, 57, 57);
+        }
+
+        /* section-1 */
+        .section-1 {
+            position: relative;
+            height: 120vh;
+            width: 99vw;
+            padding-left: 8%;
+            padding-top: 8%;
+            background-position: center;
+            background-size: cover;
+            background-image: url(image.jpg);
+        }
+
+        h3 {
+            color: white;
+        }
+
+        .section-1 h1 {
+            font-size: 90px;
+            font-weight: bold;
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        .section-1 a {
+            background: rgb(206, 76, 76);
+            width: 180px;
+            padding: 16px 17px;
+            text-decoration: none;
+            font-weight: normal;
+            color: white;
+            display: inline-block;
+            margin: 30px 20px 30px 0;
+            border-radius: 5px;
+            line-height: 22px;
+        }
+
+        .Shadow {
+            height: 120vh;
+            width: 99vw;
+            margin: -110px;
+            padding-left: 8%;
+            padding-top: 17%;
+            background-color: rgba(245, 4, 4, 0.5);
+        }
+
+        hr {
+            width: 34px;
+            color: white;
+            display: inline-block;
+        }
+
+
+        /* section-2 */
+        .section-2{
+            height: 100vh;
+            width: 99vw;
+        }
+
+        .second-page {
+            padding: 0;
+            width: 35vw;
+            height: 85vh;
+            margin: 30vh 12vw 12vh 56vw;
+        }
+
+        .head {
+            font-size: 30px;
+        }
+
+        .head span {
+            color: rgb(206, 76, 76);
+        }
+
+        .content p {
+            margin: 40px 0 40px 0;
+            font-size: 20px;
+            color: rgb(80, 76, 76);
+        }
+
+        .content span {
+            color: black;
+            font-weight: bold;
+        }
+
+        .title {
+            margin: 40px 0 0 0;
+        }
+
+        .progress-bars h4 {
+            font-size: 30px;
+            padding-bottom: 15px;
+        }
+        #progress-remain-1{
+            width: 100%; height: 3px; 
+            background: rgb(175, 158, 158);
+        }
+        #progress-full-1{
+            width: 70%; 
+            height: 3px;
+            background: red;
+        }
+        #progress-remain-2{
+            width: 100%;
+            height: 3px; 
+            background: rgb(175, 158, 158);
+        }
+        #progress-full-2{
+            width: 90%;
+            height: 3px; 
+            background: red;
+        }
+        #progress-remain-3{
+            width: 100%;
+             height: 3px; 
+            background: rgb(175, 158, 158);
+        }
+        #progress-full-3{
+            width: 85%; 
+            height: 3px; 
+            background: red;
+        }
+
+        /* section-3 */
+        .section-3 {
+            height: 140vh;
+            width: 99vw;
+            background-color: black;
+            color: white;
+        }
+
+        .third-page {
+            padding: 100px 55px 100px 55px;
+            height: 13vh;
+        }
+
+        #expreance {
+            font-size: 43px;
+        }
+
+        .Years{
+            display: inline-block;
+            height: 6vh;
+            width: 29vw;
+            padding-bottom: 9vh;
+            padding-top: 9vh;
+        }
+
+        .Profission{
+            display: inline-block;
+            height: 12vh;
+            width: 23vw;
+            padding-bottom: 9vh;
+            padding-top: 9vh;
+        }
+
+        .Pera{
+            display: inline-block;
+            height: 9vh;
+            padding-bottom: 9vh;
+            padding-top: 9vh;
+        }
+
+        .third-page hr {
+            color: white;
+            width: 90vw;
+        }
+
+        .section-3 a {
+            background: rgb(206, 76, 76);
+            width: 200px;
+            padding: 14px 17px;
+            text-decoration: none;
+            font-weight: normal;
+            color: white;
+            display: inline-block;
+            margin: 70px 20px 30px 0;
+            border-radius: 5px;
+            line-height: 22px;
+            transition: 0.8s;
+        }
+        .section-3 a:hover{
+            color: red;
+            background-color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation-Bar -->
+    <header>
+        <nav>
+            <h1 class="logo">Air University Kamra</h1>
+            <ul>
+                <li><a href="#section-1">About us</a></li>
+                <li><a href="#section-2">Services</a></li>
+                <li><a href="#section-3">Contect</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Section-1 -->
+    <section class="section-1" id="section-1">
+        <div class="Shadow">
+            <h3>ALBERTA HOLT</h3>
+            <h1>I am a Product <br> Designer</h1>
+            <a>COMPLETED <br>PROJECT</a>
+            <a>SATISFIED <br> CUSTOMERS</a>
+            <h3><hr>Watch Resume</h3>
+        </div>
+    </section>
+    <!-- Section-2 -->
+    <section class="section-2" id="section-2">
+        <div class="second-page">
+            <div class="head">
+                <h1>I'm using <span>top leading<br>Design</span> method in my<br>work.</h1>
+            </div>
+            <div class="content">
+                <p>Sea was vary do't without I deep of Multiply Sign creature make<span> fifth void</span> us face Day</p>
+            </div>
+            <div class="progress-bars">
+                <div class="title">
+                    <h4>Web-Design-70%</h4>
+                    <div class="progress">
+
+                        <div id="progress-remain-1">
+                            <div id="progress-full-1">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="title">
+                    <h4>Branding-90%</h4>
+                    <div class="progress">
+
+                        <div id="progress-remain-2">
+                            <div id="progress-full-2">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="title">
+                    <h4>Photography-85%</h4>
+                    <div class="progress">
+
+                        <div id="progress-remain-3">
+                            <div id="progress-full-3">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section-3 -->
+    <section class="section-3" id="section-3">
+        <div class="third-page">
+            <h1 id="expreance">Experience</h1>
+            <div>
+                <div class="Years">
+                    <h2>2010-2012</h2>
+                </div>
+                <div class="Profission">
+                    <h2>Grafic Designer, <br>Art and Co</h2>
+                </div>
+                <div class="Pera">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Laudantium <br> cum delectus consequatur asperiores rem deserunt.</p>
+                </div>
+            </div>
+            <hr>
+            <div>
+                <div class="Years">
+                    <h2>2012-2016</h2>
+                </div>
+                <div class="Profission">
+                    <h2>UX/UI Designer, <br>Behance Inc.</h2>
+                </div>
+                <div class="Pera">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Laudantium <br> cum delectus consequatur asperiores rem deserunt.</p>
+                </div>
+            </div>
+            <hr>
+            <div>
+                <div class="Years">
+                    <h2>2016-2023</h2>
+                </div>
+                <div class="Profission">
+                    <h2>Marketing Manager, <br>Ox Identity.</h2>
+                </div>
+                <div class="Pera">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Laudantium <br> cum delectus consequatur asperiores rem deserunt.</p>
+                </div>
+            </div>
+            <hr>
+            <a>Download Resume &darr;</a>
+        </div>
+    </section>
+</body>
+</html>
